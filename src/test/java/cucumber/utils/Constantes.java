@@ -1,4 +1,4 @@
-package com.examen.t2.cucumber.utils;
+package cucumber.utils;
 
 public class Constantes {
     public static final String BASE_URL = "https://gorest.co.in";

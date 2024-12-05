@@ -1,4 +1,4 @@
-package com.examen.t2.cucumber;
+package cucumber;
 
 import io.cucumber.junit.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
@@ -6,14 +6,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-
-
         tags = "@Test",
         plugin = {"pretty"},
-        features = {"src/test/resources/features/usuario"},
+        features = {"src/test/resources/features/post"},
         glue = {"cucumber.usuario.stepDef"}
 )
-
-
 public class CucumberTestSuite {
 }

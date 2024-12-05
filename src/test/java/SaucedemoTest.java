@@ -1,11 +1,15 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 public class SaucedemoTest {
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
-        WebDriver driver = new ChromeDriver();
+
+        //System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+        //WebDriver driver = new ChromeDriver();
+        //System.setProperty("webdriver.edge.driver", "path/to/chromedriver");
+        WebDriver driver = new EdgeDriver();
 
         try {
             // Navegar a la página
@@ -24,9 +28,9 @@ public class SaucedemoTest {
 
             // Completar la compra
             driver.findElement(By.id("checkout")).click();
-            driver.findElement(By.id("first-name")).sendKeys("John");
-            driver.findElement(By.id("last-name")).sendKeys("Doe");
-            driver.findElement(By.id("postal-code")).sendKeys("12345");
+            driver.findElement(By.id("first-name")).sendKeys("Cesar");
+            driver.findElement(By.id("last-name")).sendKeys("Alva");
+            driver.findElement(By.id("postal-code")).sendKeys("15106");
             driver.findElement(By.id("continue")).click();
             driver.findElement(By.id("finish")).click();
 

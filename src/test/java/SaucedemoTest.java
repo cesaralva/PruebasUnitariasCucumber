@@ -1,6 +1,5 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
 public class SaucedemoTest {
@@ -8,8 +7,9 @@ public class SaucedemoTest {
 
         //System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
         //WebDriver driver = new ChromeDriver();
-        //System.setProperty("webdriver.edge.driver", "path/to/chromedriver");
+        //System.setProperty("webdriver.edge.driver", "/usr/local/bin/edgedriver");
         WebDriver driver = new EdgeDriver();
+
 
         try {
             // Navegar a la página

@@ -19,8 +19,7 @@ public class ObtenerPostStepDef {
     PostAPI postAPI;
 
     @Given("el post sin parametros")
-    public void postSinParametros()
-    {
+    public void postSinParametros() {
         SerenityRest.given();
     }
 
@@ -51,7 +50,7 @@ public class ObtenerPostStepDef {
 
     @Given("el post con Titulo {string}")
     public void postConTitulo(String titulo) {
-        postAPI.obtenerPosts( null, titulo, "");
+        postAPI.obtenerPosts(null, titulo, "");
     }
 
     @And("validar el Titulo del post debe contener {string}")
@@ -63,7 +62,7 @@ public class ObtenerPostStepDef {
 
     @Given("el post con Cuerpo {string}")
     public void postConCuerpo(String cuerpo) {
-        postAPI.obtenerPosts( null, "", cuerpo);
+        postAPI.obtenerPosts(null, "", cuerpo);
     }
 
     @And("validar el Cuerpo del post debe ser {string}")
